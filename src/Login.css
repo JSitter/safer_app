@@ -1,0 +1,11 @@
+.close-wrapper{
+    text-align: left;
+}
+
+.wrapper{
+    padding: 30px;
+}
+
+.close-bttn:hover{
+    color: rgb(65, 134, 238);
+}
