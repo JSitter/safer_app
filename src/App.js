@@ -38,7 +38,7 @@ function App() {
               <a href="https://jaytria.com">Get Safer</a>
             </li>
             <li>
-              <a href="https://jaytria.com">About Us</a>
+              <a href="#" onClick={()=>{setLogin('not_guest')}}>Really login</a>
             </li>
           </ul>
           <ul className="nav-right">

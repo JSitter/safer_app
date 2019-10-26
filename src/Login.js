@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.css';
 import './Login.css';
 
+
 function handleLogin(props){
+
  try{
     props.checkLogin(document.getElementById('user').value, document.getElementById('pass').value)
  }catch{
@@ -14,10 +16,10 @@ function Login(props){
 
     return (
 
-        <section className={"panel-overlay " + props.visibility} onClick={()=>{props.setVis('hidden')}} >
+        <section className={"panel-overlay " + props.visibility} >
             
             <div className="panel-overlay-content">
-            <div className="close-wrapper"><i className="fas fa-times close-bttn"></i></div>
+            <div className="close-wrapper"><i className="fas fa-times close-bttn" onClick={()=>{props.setVis("hidden")}} ></i></div>
                 <form>
                     <label>Username</label><input id="user" type="text"></input>
                     <label>Password</label><input id="pass" type="text"></input>
