@@ -11,13 +11,13 @@
 } */
 
 :root{
-    --heading-font: 'Open Sans';
-    --main-font: 'Lato';
+    --heading-font: 'Oswald', sans-serif;
+    --main-font: 'Ubuntu', sans-serif;
   }
   
   body{
     margin: 0px;
-    font-size: 14pt;
+    font-size: 12pt;
   }
   
   * { 
@@ -26,8 +26,11 @@
   
   header{
     width: 100%;
-    min-height: 500px;
+    height: 500px;
     background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .header-logo {
@@ -74,6 +77,8 @@
   
   .nav-section {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   
   .nav-section > ul {
@@ -202,7 +207,7 @@
     border: 3px solid rgb(186, 38, 21);
   }
   
-  .hide {
+  .hidden {
     display:none!important;
   }
   
@@ -303,15 +308,15 @@
     z-index: 9999;
   }
   
-  .hero-block{
+.hero-block{
     display: flex;
     font-size: 2.5em;
     width: calc(100% - 120px);
     min-height: 250px;
-    background-color: rgba(23, 23, 23, .2);
+    background-color: rgba(247, 247, 247, 0.2);
     box-shadow: 0px 10px 15px rgb(221, 221, 221);
     padding: 60px;
-  
+    margin-top: 20px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -381,6 +386,7 @@
   
   p {
     max-width: 40em;
+    font-size: .5em;
   }
   
   .col-row {
@@ -409,13 +415,21 @@
   }
   
   .panel-overlay-content {
-  
     z-index: 10500;
     background-color: #efefef;
     padding: 75px;
     border: 1px solid #999;
     border-radius: 20px;
-  
   }
   
-  
+  .hero-block + p{
+    text-align: left;
+  }
+
+  section > h2 {
+    margin-top: -15px;
+  }
+
+.nav-right{
+  width: 75px !important;
+}

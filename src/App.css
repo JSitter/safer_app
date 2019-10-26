@@ -35,3 +35,7 @@
 .nav-color{
   background-color: #333;
 }
+
+.nav-site-link {
+  width: 200px;
+}
