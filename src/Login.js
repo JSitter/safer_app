@@ -7,6 +7,7 @@ function handleLogin(props){
 
  try{
     props.checkLogin(document.getElementById('user').value, document.getElementById('pass').value)
+    
  }catch{
      alert("Please provide a username and password.")
  }

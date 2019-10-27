@@ -7,9 +7,10 @@ function handleSubmit(props){
 
 
 export default function UserForm(props){
-    const [visibility, setVisibility] = useState(props.visibility)
+    const [visibility, setVisibility] = useState(props.userFormVis)
+
     return (
-        <section class={"panel-overlay " + props.visibility}>
+        <section className={"panel-overlay " + props.userFormVis}>
             <div className="panel-overlay-content">
             <div className="close-wrapper"><i className="fas fa-times close-bttn" onClick={()=>{props.setUserFormVis("hidden")}} ></i></div>
             
