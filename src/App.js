@@ -23,7 +23,7 @@ function getUserLocation(setLocation){
   } else {
     alert("Geolocation not available.")
   }
-  
+
 }
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
         <ul className="nav-title">
           <li><a href="https://localhost:3000/"><h1 className="nav-site-link">Safer App</h1></a></li>
         </ul>
-        
+
         <section className="nav-section" >
           <ul>
             <li>
@@ -59,13 +59,13 @@ function App() {
               <a href="https://jaytria.com">Get Safer</a>
             </li>
             <li>
-              <a href="#" onClick={()=>{setLogin('not_guest')}}>Really login</a>
+              <a href="#" onClick={()=>{setLogin('not_guest')}}>Sign Up</a>
             </li>
           </ul>
           <ul className="nav-right">
             <li><a href="#" onClick={()=>{updateLogin('login')}}>Login</a></li>
           </ul>
-          
+
         </section>
         </nav>
     {login === 'guest'? <Splash/> : <Dashboard messages={messages} setUserFormVis={setUserFormVis} userFormVis={userFormVis}/>}

@@ -6,14 +6,14 @@ function Splash(){
             <section className="hero-block">
                 <h2>Be Safer with Safer App</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                We made a cross-platform app that addresses climate change on a global scale through citizen science and a driving force behind volunteer disaster relief. Using innovative tools, we build flash communities for crisis response and encourage long term climate change solutions.
                 </p>
             </section>
 
             <section className="hero-block parallax">
-            <h2>This is some more fantastic content</h2>
+            <h2>Check out our maps!</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Our maps incorporate multiple APIs and updates in real time, pulling data from NASA and from an API that tracks air quality. We encourage you participate and spread awareness of climate change by contributing your own data to the air quality layer of the map. We built a device for you to record air quality in your very own location. Once you sign up, you will have the capability to connect your device to the map, as well as participate in disaster relief and other environmental initiatives.
             </p>
             </section>
         </section>
