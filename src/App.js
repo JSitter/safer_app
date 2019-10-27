@@ -17,6 +17,7 @@ function App() {
   const [messages, setMessage] = useState([{'message': "This is a dummy message"}, {'message': "This is another message"}])
   const [login, setLogin] = useState('guest');
   const [showLogin, updateLogin] = useState('hidden');
+  const [userFormVis, setUserFormVis] = useState("visible")
 
   return (
     <div className="App">
@@ -47,7 +48,7 @@ function App() {
           
         </section>
         </nav>
-    {login === 'guest'? <Splash/> : <Dashboard messages={messages}/>}
+    {login === 'guest'? <Splash/> : <Dashboard messages={messages} setUserFormVis={setUserFormVis} userFormVis={userFormVis}/>}
     {showLogin === "login"? <Login visibility={showLogin} setVis={updateLogin} checkLogin={checkLogin}/>: showLogin === 'signup'? <Signup visibility={showLogin} setVis={updateLogin} setLogin={setLogin}/>: ""}
       <Map/>
       <Footer/>
