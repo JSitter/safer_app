@@ -13,21 +13,41 @@ function checkLogin(user, pass, setLogin){
   setLogin("authenticated");
 }
 
+function getUserLocation(setLocation){
+  console.log("location function")
+  console.log(setLocation)
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+
+    });
+  } else {
+    alert("Geolocation not available.")
+  }
+  
+}
+
 function App() {
   const [messages, setMessage] = useState([{'message': "This is a dummy message"}, {'message': "This is another message"}])
   const [login, setLogin] = useState('guest');
   const [showLogin, updateLogin] = useState('hidden');
   const [userFormVis, setUserFormVis] = useState("visible")
-
+  const [location, setLocation] = useState([0, 0])
+  console.log("location")
+  console.log(setLocation)
+  if(location[0] == 0 && location[1] == 0){
+    console.log(setLocation)
+    getUserLocation(setLocation)
+  }
+  getUserLocation()
   return (
-    <div className="App">
+    <div className="App" onLoad={getUserLocation}>
       <header className="parallax header-bg" >
         <a href="#" className="header-logo logo-color logo-section">Safer App</a>
       </header>
       <nav className="navbar sticky nav-color">
 
         <ul className="nav-title">
-          <li><a href="http://Some Site.com"><h1 className="nav-site-link">Safer App</h1></a></li>
+          <li><a href="https://localhost:3000/"><h1 className="nav-site-link">Safer App</h1></a></li>
         </ul>
         
         <section className="nav-section" >

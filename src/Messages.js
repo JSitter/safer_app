@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default function Messages(props){  
     const messages = props.messages.map(message=>message)
 
@@ -8,6 +7,6 @@ export default function Messages(props){
     return (
         <ul>
           {messageList}
-         </ul> 
+        </ul> 
       )
 }
